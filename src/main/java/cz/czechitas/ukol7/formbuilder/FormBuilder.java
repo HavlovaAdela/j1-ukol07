@@ -2,8 +2,8 @@ package cz.czechitas.ukol7.formbuilder;
 
 import com.jgoodies.binding.PresentationModel;
 import com.jgoodies.binding.adapter.BasicComponentFactory;
-import com.jgoodies.binding.adapter.Bindings;
 import com.jgoodies.binding.list.SelectionInList;
+import com.jgoodies.common.bean.Bean;
 import com.jgoodies.common.swing.MnemonicUtils;
 
 import javax.swing.*;
@@ -36,9 +36,9 @@ public class FormBuilder<B> implements WithModel<B>, FormBuilderWithContainer<B>
   }
 
   @Override
-  public FormBuilderWithContainer<B> container(Container container) {
+  public FormBuilderWithContainer<Bean> container(Container container) {
     this.container = container;
-    return this;
+    return (FormBuilderWithContainer<Bean>) this;
   }
 
   @Override
