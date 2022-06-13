@@ -45,20 +45,14 @@ public class HlavniOkno extends JFrame {
                     .add("span");
         }
 
-//Pozn.Toto je řešení bez bonusové úlohy-> tady je někde chyba - barva je null ve výpisu a tudíž i tlačítko uložit je pořád šedivé
+//Pozn.Toto je řešení bez bonusové úlohy
 //        formBuilder
-//        .panel(panel->{
-//            JRadioButton cervena= new JRadioButton(Barva.CERVENA.getText());
-//            JRadioButton zluta= new JRadioButton(Barva.ZLUTA.getText());
+//                .radioButton("červená", "barva", Barva.CERVENA)
+//                .add();
 //
-//            ButtonGroup skupina= new ButtonGroup();
-//            skupina.add(cervena);
-//            skupina.add(zluta);
-//            panel.add(cervena);
-//            panel.add(zluta);
-//            }
-//    )
-//        .add();
+//        formBuilder
+//                .radioButton("žlutá", "barva", Barva.ZLUTA)
+//                .add();
 
 
         formBuilder.panel(panel -> {
